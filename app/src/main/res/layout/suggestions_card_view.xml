@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/boarder_line_background"
+    android:foreground="?attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/boarder_line_background"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boarder_line_background"
+            android:orientation="vertical"
+            android:id="@+id/part1">
+            <RelativeLayout
+                android:id="@+id/userLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/userImageCard"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:layout_marginLeft="@dimen/md_keylines"
+                    android:elevation="100dp"
+                    app:cardCornerRadius="70dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/userImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <com.wang.avi.AVLoadingIndicatorView
+                        android:id="@+id/progress_bar_user_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:indicatorName="BallScaleMultipleIndicator" />
+
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:layout_toRightOf="@+id/userImageCard"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    tools:text="Naresh"
+                    android:ellipsize="end"
+                    android:singleLine="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/article_subheading" />
+
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:id="@+id/ratingbar"
+                    style="@style/RatingBar"
+                    android:layout_toRightOf="@+id/userImageCard"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    android:backgroundTint="@color/white"
+                    android:progressTint="@color/black"
+                    android:layout_below="@id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="false"
+                    android:scaleX=".5"
+                    android:scaleY=".5"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp"
+                    android:numStars="7"
+                    android:rating="0.6"
+                    android:stepSize="0.1" />
+
+                <ImageView
+                    android:id="@+id/report_bar"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:layout_marginLeft="@dimen/md_keylines"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    android:src="@drawable/ic_action_overflow"
+                    android:background="@color/line_background" />
+
+
+                <TextView
+                    android:id="@+id/tagsName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userImageCard"
+                    android:layout_marginLeft="@dimen/md_keylines"
+                    tools:text="@string/tagsName"
+                    android:ellipsize="end"
+                    android:singleLine="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tag_size" />
+
+                <TextView
+                    android:id="@+id/tagsValues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tagsName"
+                    android:layout_below="@+id/userImageCard"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    tools:text="@string/tagsVal"
+                    android:singleLine="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tag_size" />
+
+            </RelativeLayout>
+
+            <com.apradanas.simplelinkabletext.LinkableTextView
+                android:id="@+id/text_Comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userLayout"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/md_keylines"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginRight="@dimen/md_keylines"
+                tools:text="@string/item_desc"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:textColor="@color/white"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/normal_text_view" />
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/conceptTitle"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/userLayout"-->
+                <!--android:layout_marginTop="@dimen/small_margin"-->
+                <!--android:layout_marginLeft="@dimen/md_keylines"-->
+                <!--android:layout_marginBottom="@dimen/small_margin"-->
+                <!--android:layout_marginRight="@dimen/md_keylines"-->
+                <!--tools:text="@string/item_desc"-->
+                <!--android:ellipsize="end"-->
+                <!--android:singleLine="false"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/article_subheading" />-->
+
+            <ImageView
+                android:id="@+id/questionImage"
+                android:layout_below="@id/text_Comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/md_keylines"
+                android:layout_marginRight="@dimen/md_keylines"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:src="@drawable/home"
+                android:background="@android:color/darker_gray" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/part2"
+            android:layout_below="@+id/part1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/part3Linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:id="@+id/voteLayout"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="@dimen/md_keylines"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:weightSum="2"
+                    android:layout_marginLeft="@dimen/md_keylines"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/voteText"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/likes"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/article_subheading" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/upvoteLayout"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="@dimen/md_keylines"
+                    android:layout_toRightOf="@+id/voteLayout"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/upvoteImage"
+                        android:layout_width="@dimen/comments"
+                        android:layout_height="@dimen/comments"
+                        android:layout_marginLeft="@dimen/md_keylines"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:src="@drawable/ic_action_up_arrow"
+                        android:background="@color/line_background" />
+
+                    <TextView
+                        android:id="@+id/upvoteText"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/upvote"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/article_subheading" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/replyLayoutsub"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:weightSum="2"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/replyImagesub"
+                        android:layout_width="@dimen/comments"
+                        android:layout_height="@dimen/comments"
+                        android:layout_marginLeft="@dimen/md_keylines"
+                        android:layout_marginRight="@dimen/md_keylines"
+                        android:src="@drawable/ic_action_comments"
+                        android:background="@color/line_background" />
+
+                    <TextView
+                        android:id="@+id/replyTextsub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/md_keylines"
+                        tools:text="@string/reply"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/article_subheading" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

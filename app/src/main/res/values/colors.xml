@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="light_red">#660000</color>
-    <color name="colorPrimary">#3d414d</color>
+    <color name="colorPrimary">#D03D414D</color>
     <color name="colorPrimaryDark">#999999</color>
     <color name="line_background">#999999</color>
-    <color name="colorAccent">#000000</color>
+    <color name="whitegray">#32999999</color>
+    <color name="colorAccent">#B5000000</color>
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
     <color name="app_background">#3d414d</color>
     <color name="red">#ff0000</color>
+    <color name="redyellow">#F7780A</color>
+    <color name="lightBlue">#AD5EFC</color>
+    <color name="green">#00ff00</color>
+    <color name="greenDark">#0DEC8C</color>
+    <color name="greenBlue">#00f0ff</color>
+    <color name="blue">#0000ff</color>
+    <color name="gray">#999999</color>
 
     <color name="black_overlay">#66000000</color>
+    <color name="star1">#01FFA6</color>
+    <color name="star2">#F70673F8</color>
+    <color name="star3">#B40EF0</color>
+    <color name="star4">#E60B7C</color>
+    <color name="star5">#10F708</color>
+    <color name="star6">#EBBA0D</color>
+    <color name="star7">#FF5722</color>
+    <color name="star8">#FF0000</color>
+    <color name="star9">#1E0424</color>
+    <color name="star10">#6B0909</color>
 
+
+    <color name="hadlerColorBorder">#661302FF</color>
+    <color name="windowBackground">#B9999999</color>
+    <color name="colorButtonNormal">#FFFFFB</color>
+    <color name="textColorPrimary">#FFFFFB</color>
+    <color name="textColorPrimaryInverse">#1C1C1C</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="divider">#333333</color>
 
 </resources>

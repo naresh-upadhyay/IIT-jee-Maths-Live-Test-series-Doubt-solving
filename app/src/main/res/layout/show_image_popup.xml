@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/darker_gray"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/part1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/cancel"
+            android:src="@drawable/ic_action_remove"
+            android:tint="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_alignParentLeft="true"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zoom"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+        android:id="@+id/showImage"
+        android:layout_below="@+id/part1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true"
+        android:src="@mipmap/ic_launcher"
+        tools:maxHeight="@android:dimen/dialog_min_width_minor" />
+</RelativeLayout>

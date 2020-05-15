@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/back"
+                    android:src="@drawable/ic_action_back"
+                    android:tint="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+
+                <ImageButton
+                    android:id="@+id/refresh_determinants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_refresh"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_selector"
+                    android:text="Refresh"/>
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <include
+        android:id="@+id/postLayout"
+        layout="@layout/comment_post_card_view"
+        android:layout_below="@+id/appbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/commentRecyclerView"
+        android:layout_below="@+id/postLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/bottom_recycler"
+        android:scrollbars="vertical"
+        android:background="@color/whitegray"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progress_bar_backdrop"
+        android:layout_below="@+id/postLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorName="LineScalePulseOutRapidIndicator" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="ca-app-pub-6924423095909700/5038957813">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

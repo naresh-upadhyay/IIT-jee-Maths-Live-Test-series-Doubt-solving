@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#0099cc"
-    tools:context=".Basic_activity">
+    tools:context=".activities.Basic_activity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
@@ -46,7 +46,7 @@
                 <ImageView
                     android:id="@+id/logo"
                     android:layout_width="40dp"
-                    android:src="@mipmap/mathsk"
+                    android:src="@mipmap/ic_launcher"
                     android:layout_marginRight="30dp"
                     android:layout_alignParentRight="true"
                     android:layout_height="40dp" />
@@ -61,15 +61,32 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true" />
 
+        <!--android:layout_margin="@dimen/fab_margin"-->
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
+            android:layout_alignParentBottom="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/fab_margin"
-            android:layout_alignParentBottom="true"
-            app:layout_anchorGravity="bottom|end"
+            android:layout_gravity="bottom|start"
+            android:layout_marginBottom="@dimen/bottom_recycler"
+            android:layout_marginLeft="@dimen/right_margin_card"
+            android:backgroundTint="@color/line_background"
+            android:background="@color/redyellow"
+            android:tint="@color/white"
+            app:fabSize="mini"
             app:srcCompat="@drawable/arrow_expanded" />
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewbasic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            android:layout_alignParentBottom="true"
+            ads:adUnitId="ca-app-pub-6924423095909700/2178697042">
+        </com.google.android.gms.ads.AdView>
+
 
     </RelativeLayout>
 
@@ -91,14 +108,14 @@
             tools:ignore="UselessParent">
 
 
-            <android.support.design.widget.AppBarLayout
+            <com.google.android.material.appbar.AppBarLayout
                 android:id="@+id/appbarWebView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-                <android.support.v7.widget.Toolbar
+                <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -141,9 +158,9 @@
 
                     </RelativeLayout>
 
-                </android.support.v7.widget.Toolbar>
+                </androidx.appcompat.widget.Toolbar>
 
-            </android.support.design.widget.AppBarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
 
         </LinearLayout>
     </FrameLayout>

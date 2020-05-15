@@ -97,25 +97,6 @@
         "interact, and exist in space and in relation to each other. Realistic lighting shows "
         "seams, divides space, and indicates moving parts.\n\n"
 
-        "Bold, graphic, intentional.\n\n"
-
-        "The foundational elements of print based design typography, grids, space, scale, color, "
-        "and use of imagery guide visual treatments. These elements do far more than please the "
-        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
-        "imagery, large scale typography, and intentional white space create a bold and graphic "
-        "interface that immerse the user in the experience.\n"
-        "An emphasis on user actions makes core functionality immediately apparent and provides "
-        "waypoints for the user.\n\n"
-
-        "Motion provides meaning.\n\n"
-
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
-
         "3D world.\n\n"
 
         "The material environment is a 3D space, which means all objects have x, y, and z "
@@ -173,4 +154,177 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="title_activity_pdf_fragment">PdfFragment</string>
+    <string name="title_activity_concepts">Concepts</string>
+    <string name="tagsVal"> IIT jee 2015 , Multiple Choice</string>
+    <string name="tagsName">Tags : </string>
+    <string name="comment">Comment</string>
+    <string name="editorial">Solution</string>
+    <string name="submission">Best Submission</string>
+    <string name="likes">8</string>
+    <string name="post">Post</string>
+    <string name="percentsign">%</string>
+    <string name="attach">Attached</string>
+    <string name="solve">Solve :</string>
+    <string name="time">Time :</string>
+    <string name="h">h</string>
+    <string name="like">Like</string>
+    <string name="more">More</string>
+    <string name="reply">Reply</string>
+    <string name="report">Report</string>
+    <string name="hide">Hide</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="upvote">Up vote</string>
+    <string name="downvote">Down vote</string>
+    <string name="thought">Write your thoughts here&#8230;</string>
+    <string name="select">Select a Image from gallery or camera</string>
+    <string name="picncrop">Pick Image And Crop</string>
+    <string name="croped">Cropped Image</string>
+    <string name="done">Done</string>
+    <string name="retake">Retake</string>
+    <string name="back">Back</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="capture">Crop</string>
+    <string name="full">Full</string>
+    <string name="leftrotate">Left Rotate</string>
+    <string name="rightrotate">Right Rotate</string>
+
+
+    <string name="example">Example</string>
+    <string name="doubt">Doubt Ask/Solve</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="concept">Concept</string>
+
+    <!--todo example post-->
+    <string name="manditory">All Fields are Mandatory</string>
+    <string name="tags">Enter Tags</string>
+    <string name="selectTags">eg. IIT jee-2019,Easy/Medium/Hard ,&#8230; </string>
+    <string name="questionText">Describe your Question</string>
+    <string name="describeEntry">eg. (if no text then enter a dot(.) only)</string>
+    <string name="describeEntrynum">eg. (1,2,3&#8230; only)</string>
+    <string name="questionImageText">Attach Question Image</string>
+    <string name="questionImageText1">Attach Question Image(Optional)</string>
+    <string name="optionSwitchText">Subjective/Optional</string>
+    <string name="options">Select Options</string>
+    <string name="answerText">Describe your Answer</string>
+    <string name="answerImageText">Attach Answer Image</string>
+
+    <string name="topicn">Topic number</string>
+    <string name="conceptText">Concept title</string>
+    <string name="pdfUrl">Enter pdf Url</string>
+
+
+    <!--test series-->
+    <string name="testseries">Test Series</string>
+    <string name="testseriesjoin">Join Test Series</string>
+    <string name="testserieshost">Host Test Series</string>
+    <string name="previous">Previous</string>
+    <string name="live">Live</string>
+    <string name="Upcoming">Upcoming</string>
+    <string name="attempt">Attempt</string>
+    <string name="reattempt">Re Attempt</string>
+    <string name="attempted">Attempted</string>
+    <string name="start">Start</string>
+    <string name="finish">Finish</string>
+    <string name="cancel">Cancel</string>
+    <string name="number">38</string>
+    <string name="question">Questions</string>
+    <string name="quest">Q.</string>
+    <string name="test">T.</string>
+    <string name="marks">Marks</string>
+    <string name="markss">Marks :</string>
+    <string name="timem">minutes</string>
+    <string name="timeh">hours</string>
+    <string name="score">Scored</string>
+    <string name="instrucitonfinish">Are you Sure..</string>
+    <string name="zoom">Pinch to Zoom</string>
+
+    <string name="selectSpinner">Select a number</string>
+    <string name="participant">Participant Name</string>
+    <string name="rank">Rank</string>
+    <string name="tscore">Total Score</string>
+    <string name="correct">Correct</string>
+    <string name="wrong">Wrong</string>
+    <string name="solution">Solution and Review your test</string>
+
+    <string name="positive">+</string>
+    <string name="negative"></string>
+    <string name="slash">/</string>
+
+
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+    <string name="onlyLive">Leader Board available \n only in Live Exam</string>
+    <string name="permission_pick_rationale">READ_EXTERNAL_STORAGE permission is needed to pick image.</string>
+    <string name="permission_crop_rationale">WRITE_EXTERNAL_STORAGE permission is needed to save cropped image.</string>
+    <string name="permission_denied">Permission was denied. Please consider granting it in order to use all features.</string>
+    <string name="permission_denied_never_ask_again">Permission was denied with never ask again.</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+
+
+    <string name="startondate">Start soon</string>
+    <string name="startnow">Start Now</string>
+    <string name="timeup">Time Up</string>
+    <string name="instruction">Read Instructions</string>
+    <string name="instructionLive">Exam Instructions</string>
+    <string name="goodat">You are good at \n(keep it up)</string>
+    <string name="workon">\t\t \t \t You have to work on\n(better luck next time, you can do it)</string>
+
+    <!--chapters name-->
+    <string name="book">Book</string>
+    <string name="chapter">Chapter</string>
+    <string name="deternant">Determinants</string>
+    <string name="matices">Matrices</string>
+    <string name="logrithmic">Logarithmic</string>
+    <string name="series">Series</string>
+    <string name="equation">Equation</string>
+    <string name="complex">Complex</string>
+    <string name="pnc">Permutation and Combination</string>
+    <string name="binomial">Binomial</string>
+    <string name="probability">Probability</string>
+    <string name="functions">Functions</string>
+    <string name="limit">Limit</string>
+    <string name="continuty">Continuity</string>
+    <string name="differentiability">Differentiability</string>
+    <string name="differentiation">Differentiation</string>
+    <string name="monottonicity">Monotonicity</string>
+    <string name="maxmin">Maxima and Minima</string>
+    <string name="tangenNormal">Tangent and Normal</string>
+    <string name="rate">Rate</string>
+    <string name="rolleLangranges">Rolle\'s and Lagranges</string>
+    <string name="indefinite">Indefinite</string>
+    <string name="definite">Definite</string>
+    <string name="area">Area</string>
+    <string name="differentialeq">Differential Equation</string>
+    <string name="rationIdent">Ratio and Identity</string>
+    <string name="trignoeq">Trigonometric Equation</string>
+    <string name="inverseTrigo">Inverse Trigonometric</string>
+    <string name="heightDist">Height and Distance</string>
+    <string name="stratline">Straight Line</string>
+    <string name="pairofstratline">Pair of Straight Line</string>
+    <string name="circle">Circle</string>
+    <string name="parabola">Parabola</string>
+    <string name="ellipse">Ellipse</string>
+    <string name="hyperbola">Hyperbola</string>
+    <string name="threed">Three Dimensional Geometry</string>
+    <string name="vectr">Vector</string>
+
+    <!--todo post upcoming test-->
+    <string name="testseriestitle">Name of test series</string>
+    <string name="noofquestion">Number of questions</string>
+    <string name="noofminutes">Number of minutes</string>
+    <string name="noofMarks">Number of marks</string>
+    <string name="noofhours">Number of hours</string>
+    <string name="date">Select a date and time</string>
+    <string name="selectSpinnerChapter">Select chapter</string>
+    <string name="markspos">Marks Positive</string>
+    <string name="marksneg">Marks Negative</string>
+    <string name="feedback">Feedback</string>
+    <string name="close">Close</string>
+    <string name="leaderboard">Leader Board</string>
+    <string name="invite">Invite</string>
+
+
 </resources>

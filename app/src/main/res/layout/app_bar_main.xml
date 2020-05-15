@@ -8,20 +8,20 @@
     android:layout_height="match_parent"
     android:background="@color/app_background"
     android:fitsSystemWindows="true"
-    tools:context="com.naresh.kingupadhyay.mathsking.MainActivity">
+    tools:context="com.naresh.kingupadhyay.mathsking.UiMaterial.MainActivity">
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/main_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <android.support.design.widget.AppBarLayout
+        <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-            <android.support.v7.widget.Toolbar
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
@@ -29,22 +29,33 @@
                 app:layout_scrollFlags="scroll|enterAlways"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-            <android.support.design.widget.TabLayout
+            <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:tabMaxWidth="0dp"
-                app:tabGravity="fill"
-                app:tabMode="fixed"/>
+                app:tabGravity="center"
+                app:tabMode="scrollable"/>
 
-        </android.support.design.widget.AppBarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
 
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adVmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="ca-app-pub-6924423095909700/1001362659">
+    </com.google.android.gms.ads.AdView>
+
 </RelativeLayout>

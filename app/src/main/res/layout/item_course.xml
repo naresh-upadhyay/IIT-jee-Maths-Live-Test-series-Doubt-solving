@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="?android:attr/selectableItemBackground"
     android:padding="@dimen/tile_padding"
-    tools:context=".Course">
+    tools:context=".fragments.Course">
 
     <Button
         android:layout_width="match_parent"

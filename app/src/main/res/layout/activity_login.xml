@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.naresh.kingupadhyay.mathsking.LoginActivity">
+    tools:context="com.naresh.kingupadhyay.mathsking.UiMaterial.LoginActivity">
 
 
     <ScrollView
@@ -47,7 +47,7 @@
             android:layout_marginTop="10dp"
             android:src="@drawable/about_us" />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/user_name"
             android:layout_below="@+id/login_name"
             android:layout_marginLeft="50dp"
@@ -63,7 +63,7 @@
                 android:maxLines="1"
                 android:singleLine="true" />
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
             android:id="@+id/user_image"
@@ -82,7 +82,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content" />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/phone"
                 android:layout_below="@+id/user_name"
                 android:layout_marginLeft="150dp"
@@ -99,7 +99,7 @@
                     android:maxLines="1"
                     android:singleLine="true" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
             <Button
                 android:id="@+id/send_code"
                 style="@style/Widget.AppCompat.Button.Colored"
@@ -144,7 +144,7 @@
             android:visibility="invisible"
             android:layout_alignParentLeft="true" />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/user_otp"
             android:layout_below="@+id/resend_code"
             android:layout_width="100dp"
@@ -159,7 +159,7 @@
                 android:maxLines="1"
                 android:singleLine="true" />
 
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/verify"

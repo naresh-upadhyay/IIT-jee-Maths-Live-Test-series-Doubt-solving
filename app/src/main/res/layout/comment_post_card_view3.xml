@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/card_view_post_comment3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/boarder_line_background"
+    android:foreground="?attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/part1Linear_post_comment3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/userImageLayout_post_comment3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/userImageCard_post_comment3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:elevation="100dp"
+                app:cardCornerRadius="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/userImage_post_comment3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/progress_bar_user_image_post_comment3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallScaleMultipleIndicator" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/editTextLayout_post_comment3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/editTextCard_post_comment3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/postButton_post_comment3"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:elevation="100dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:background="@color/whitegray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/writeText_post_comment3"
+                        android:textColorHint="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.apradanas.simplelinkabletext.LinkableEditText
+                            android:id="@+id/linkableEdit_post_comment3"
+                            android:hint="@string/thought"
+                            android:textColor="@color/black"
+                            android:singleLine="false"
+                            android:imeOptions="actionSend"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:inputType="none"
+                            android:cursorVisible="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/postButton_post_comment3"
+                android:layout_width="@dimen/right_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_above="@id/uploadImageLayout_post_comment3"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:background="@color/whitegray"
+                android:backgroundTint="@color/whitegray"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:text="@string/post"/>
+
+            <RelativeLayout
+                android:id="@+id/uploadImageLayout_post_comment3"
+                android:layout_below="@+id/editTextCard_post_comment3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/uploadImage_post_comment3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/attachLayout_post_comment3"
+                        android:layout_width="wrap_content"
+                        android:maxWidth="@dimen/md_keylines"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:layout_marginLeft="@dimen/md_keylines"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/attached_post_comment3"
+                            android:layout_marginLeft="@dimen/cards_button_width"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="@string/attach"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/lightBlue"
+                            android:textSize="@dimen/article_subheading" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/attachImageLayout_post_comment3"
+                        android:layout_width="wrap_content"
+                        android:maxWidth="@dimen/md_keylines"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/attachImage_post_comment3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/comments"
+                            android:tint="@color/blue"
+                            android:backgroundTint="@color/white"
+                            android:layout_marginRight="@dimen/small_margin"
+                            android:src="@drawable/ic_action_new_picture"
+                            android:background="@android:color/white" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

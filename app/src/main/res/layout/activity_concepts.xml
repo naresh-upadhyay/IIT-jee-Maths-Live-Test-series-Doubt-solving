@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.Concepts">
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/conceptAppbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/conceptToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageButton
+                            android:id="@+id/backConcept"
+                            android:src="@drawable/ic_action_back"
+                            android:tint="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/selectableItemBackgroundBorderless" />
+                        <TextView
+                            android:id="@+id/titleb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hello android"
+                            android:singleLine="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/conceptTabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMaxWidth="0dp"
+                    app:tabGravity="center"
+                    app:tabMode="scrollable"/>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/conceptViewpager"
+                    android:layout_below="@+id/conceptAppbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="ca-app-pub-6924423095909700/1963090535">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

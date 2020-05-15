@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PostExample">
+
+    <ScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="10dp">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/manditory"
+                android:text="@string/manditory"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:textColor="@color/light_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tagsTextView"
+                android:text="@string/testseriestitle"
+                android:layout_marginTop="@dimen/md_keylines"
+                android:textColor="@color/hadlerColorBorder"
+                android:layout_below="@id/manditory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_below="@+id/tagsTextView"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.apradanas.simplelinkabletext.LinkableEditText
+                    android:id="@+id/nameTestLinkableEdit"
+                    android:hint="@string/testseriestitle"
+                    android:textColor="@color/black"
+                    android:singleLine="false"
+                    android:imeOptions="actionSend"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scrollbars="vertical"
+                    android:lines="5"
+                    android:minLines="1"
+                    android:maxLines="5"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:cursorVisible="true"
+                    android:textSize="@dimen/medium_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/questionTextView"
+                android:layout_below="@+id/rl1"
+                android:text="@string/noofquestion"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:textColor="@color/hadlerColorBorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_below="@+id/questionTextView"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.apradanas.simplelinkabletext.LinkableEditText
+                    android:id="@+id/questionsLinkableEdit"
+                    android:hint="@string/noofquestion"
+                    android:textColor="@color/black"
+                    android:singleLine="false"
+                    android:imeOptions="actionSend"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scrollbars="vertical"
+                    android:lines="5"
+                    android:minLines="1"
+                    android:maxLines="5"
+                    android:inputType="number"
+                    android:cursorVisible="true"
+                    android:textSize="@dimen/medium_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/questionTextView1"
+                android:layout_below="@+id/rl2"
+                android:text="@string/noofMarks"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:textColor="@color/hadlerColorBorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/rl21"
+                android:layout_below="@+id/questionTextView1"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.apradanas.simplelinkabletext.LinkableEditText
+                    android:id="@+id/marksLinkableEdit1"
+                    android:hint="@string/noofMarks"
+                    android:textColor="@color/black"
+                    android:singleLine="false"
+                    android:imeOptions="actionSend"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scrollbars="vertical"
+                    android:lines="5"
+                    android:minLines="1"
+                    android:maxLines="5"
+                    android:inputType="number"
+                    android:cursorVisible="true"
+                    android:textSize="@dimen/medium_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/questionTextView2"
+                android:layout_below="@+id/rl21"
+                android:text="@string/noofminutes"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:textColor="@color/hadlerColorBorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/rl22"
+                android:layout_below="@+id/questionTextView2"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.apradanas.simplelinkabletext.LinkableEditText
+                    android:id="@+id/minutesLinkableEdit2"
+                    android:hint="@string/noofminutes"
+                    android:textColor="@color/black"
+                    android:singleLine="false"
+                    android:imeOptions="actionSend"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scrollbars="vertical"
+                    android:inputType="number"
+                    android:lines="5"
+                    android:minLines="1"
+                    android:maxLines="5"
+                    android:cursorVisible="true"
+                    android:textSize="@dimen/medium_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/questionTextView5"
+                android:layout_below="@+id/rl22"
+                android:text="@string/date"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:textColor="@color/hadlerColorBorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <DatePicker
+                android:id="@+id/datePicker1"
+                android:layout_below="@id/questionTextView5"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"/>
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_below="@id/datePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/postButton_post_example"
+                android:layout_width="@dimen/right_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bottom_recycler"
+                android:layout_marginBottom="@dimen/bottom_recycler"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:backgroundTint="@color/line_background"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/timePicker"
+                android:textColor="@color/blue"
+                android:textAllCaps="false"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/post"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

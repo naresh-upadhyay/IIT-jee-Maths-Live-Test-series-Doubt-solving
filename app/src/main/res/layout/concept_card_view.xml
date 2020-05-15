@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/boarder_line_background"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/boarder_line_background"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:orientation="vertical"
+            android:id="@+id/part1">
+            <TextView
+                android:id="@+id/topicNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/md_keylines"
+                android:layout_marginTop="@dimen/md_keylines"
+                android:layout_marginBottom="@dimen/md_keylines"
+                android:layout_marginRight="@dimen/md_keylines"
+                tools:text="Topic 1"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/article_subheading" />
+            <TextView
+                android:id="@+id/editConcept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                tools:text="@string/edit"
+                android:visibility="gone"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="@dimen/medium_text_view" />
+
+            <LinearLayout
+                android:id="@+id/timeLayout"
+                android:layout_marginTop="@dimen/md_keylines"
+                android:layout_marginBottom="@dimen/md_keylines"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:maxWidth="@dimen/md_keylines"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/md_keylines"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_text_view" />
+                <TextView
+                    android:id="@+id/hoursval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_text_view" />
+                <TextView
+                    android:id="@+id/hoursh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/h"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_text_view" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/conceptTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topicNum"
+                android:layout_marginLeft="@dimen/md_keylines"
+                android:layout_marginBottom="@dimen/md_keylines"
+                android:layout_marginRight="@dimen/md_keylines"
+                tools:text="@string/item_desc"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_text_view" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cards_button_height"
+            android:background="@drawable/boarder_line_background"
+            android:layout_below="@+id/part1">
+            <LinearLayout
+                android:id="@+id/part2"
+                android:layout_width="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageButton
+                    android:id="@+id/add_favorite"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="@dimen/md_keylines"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/md_keylines"
+                    app:srcCompat="@drawable/favourite_blank"
+                    android:tint="@color/red"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+
+                <ImageButton
+                    android:id="@+id/share"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/option_height32"
+                    android:maxWidth="@dimen/md_keylines"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/option_height32"
+                    app:srcCompat="@drawable/ic_menu_share"
+                    android:tint="@color/white"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+                <ImageButton
+                    android:id="@+id/download"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/option_height32"
+                    android:maxWidth="@dimen/md_keylines"
+                    android:layout_height="@dimen/option_height32"
+                    app:srcCompat="@drawable/ic_action_download"
+                    android:tint="@color/white"
+                    android:background="?attr/selectableItemBackgroundBorderless" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/option_height32"
+                    android:maxWidth="@dimen/md_keylines"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    android:layout_height="@dimen/option_height32">
+                    <CheckBox
+                        android:layout_width="@dimen/option_height32"
+                        android:maxWidth="@dimen/md_keylines"
+                        android:layout_height="@dimen/option_height32"
+                        android:id="@+id/checkBox"
+                        android:layout_centerInParent="true"
+                        android:checked="false"
+                        android:shadowColor="@color/white"
+                        android:tint="@color/green"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

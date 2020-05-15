@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_height"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/timertext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/timeup"
+                        android:singleLine="true"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/titleb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hello android"
+                        android:singleLine="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="80dp"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/finshtest"
+                        android:layout_width="@dimen/right_margin"
+                        android:layout_height="@dimen/option_height32"
+                        android:src="@drawable/ic_action_refresh"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/red"
+                        android:singleLine="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:backgroundTint="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:textSize="20dp"
+                        android:textAllCaps="false"
+                        android:text="@string/finish"/>
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/exampleRecyclerView"
+            android:layout_below="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/big_padding"
+            android:paddingTop="16dp"
+            android:scrollbars="vertical"
+            android:background="@color/colorPrimaryDark"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/progress_bar_backdrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:indicatorName="LineScalePulseOutRapidIndicator" />
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adVmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            android:layout_alignParentBottom="true"
+            ads:adUnitId="ca-app-pub-6924423095909700/5483177922">
+        </com.google.android.gms.ads.AdView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

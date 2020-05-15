@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/boarder_line_background"
+    android:foreground="?attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/boarder_line_background"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boarder_line_background"
+            android:orientation="vertical"
+            android:id="@+id/part1">
+            <RelativeLayout
+                android:id="@+id/userLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/Quest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:layout_marginLeft="@dimen/right_margin_card"
+                    android:layout_marginBottom="@dimen/small_margin"
+                    tools:text="@string/quest"
+                    android:ellipsize="end"
+                    android:singleLine="false"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/medium_text_view" />
+
+                <TextView
+                    android:id="@+id/cardNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:layout_toRightOf="@+id/Quest"
+                    android:layout_marginBottom="@dimen/small_margin"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    tools:text="@string/number"
+                    android:ellipsize="end"
+                    android:singleLine="false"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/medium_text_view" />
+
+                <LinearLayout
+                    android:id="@+id/markLayout"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/marks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_margin"
+                        tools:text="@string/markss"
+                        android:ellipsize="end"
+                        android:singleLine="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/medium_text_view" />
+                    <TextView
+                        android:id="@+id/signpositive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_margin"
+                        tools:text="@string/positive"
+                        android:ellipsize="end"
+                        android:singleLine="false"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/medium_text_view" />
+                    <TextView
+                        android:id="@+id/marksobtainpositive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_margin"
+                        tools:text="@string/likes"
+                        android:ellipsize="end"
+                        android:singleLine="false"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/medium_text_view" />
+                    <TextView
+                        android:id="@+id/marksobtainspace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_margin"
+                        tools:text="@string/slash"
+                        android:ellipsize="end"
+                        android:singleLine="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/medium_text_view" />
+                    <TextView
+                        android:id="@+id/signNegative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_margin"
+                        tools:text="@string/negative"
+                        android:ellipsize="end"
+                        android:singleLine="false"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/medium_text_view" />
+                    <TextView
+                        android:id="@+id/marksobtainNegative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_margin"
+                        tools:text="@string/likes"
+                        android:ellipsize="end"
+                        android:singleLine="false"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/medium_text_view" />
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/solveLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/solvepercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_margin"
+                        tools:text="@string/score"
+                        android:ellipsize="end"
+                        android:layout_toLeftOf="@+id/solvepercentval"
+                        android:singleLine="false"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/medium_text_view" />
+                    <TextView
+                        android:id="@+id/solvepercentval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:visibility="gone"
+                        tools:text="@string/likes"
+                        android:ellipsize="end"
+                        android:layout_toLeftOf="@+id/percent"
+                        android:singleLine="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/medium_text_view" />
+                    <TextView
+                        android:id="@+id/percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_margin"
+                        tools:text="@string/percentsign"
+                        android:visibility="gone"
+                        android:ellipsize="end"
+                        android:layout_toLeftOf="@id/report_bar"
+                        android:singleLine="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/medium_text_view" />
+
+                    <ImageView
+                        android:id="@+id/report_bar"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:src="@drawable/ic_action_overflow"
+                        android:background="@color/line_background" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/tagslayout"
+                    android:layout_below="@+id/cardNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tagsName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/md_keylines"
+                        tools:text="@string/tagsName"
+                        android:ellipsize="end"
+                        android:singleLine="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/tag_size" />
+
+                    <TextView
+                        android:id="@+id/tagsValues"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tagsName"
+                        android:layout_marginRight="@dimen/md_keylines"
+                        tools:text="@string/tagsVal"
+                        android:singleLine="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/tag_size" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/conceptTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userLayout"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/md_keylines"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginRight="@dimen/md_keylines"
+                tools:text="@string/item_desc"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_text_view" />
+
+            <RelativeLayout
+                android:id="@+id/questionImageLayout"
+                android:layout_below="@id/conceptTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/md_keylines"
+                android:layout_marginRight="@dimen/md_keylines"
+                android:layout_marginBottom="@dimen/small_margin">
+
+                <ImageView
+                    android:id="@+id/questionImage"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/home"
+                    android:background="@android:color/darker_gray" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/progress_bar_questionImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:indicatorName="LineScalePulseOutRapidIndicator" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/partspinner"
+            android:layout_below="@id/part1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/select"
+                android:layout_marginLeft="@dimen/md_keylines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/selectSpinner"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text_view" />
+
+            <Spinner
+                android:id="@+id/spinnerNumbers"
+                android:layout_toRightOf="@+id/select"
+                android:layout_marginLeft="@dimen/option_height32"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/part2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/partspinner">
+            <LinearLayout
+                android:id="@+id/part2Linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:id="@+id/optionA"
+                    android:layout_width="@dimen/option_height32"
+                    android:maxWidth="@dimen/md_keylines"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    android:layout_height="@dimen/option_height32">
+                    <TextView
+                        android:id="@+id/optionTextA"
+                        android:layout_marginLeft="@dimen/md_keylines"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="A"
+                        android:ellipsize="end"
+                        android:singleLine="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/large_text_view" />
+
+                    <CheckBox
+                        android:layout_width="@dimen/option_height32"
+                        android:maxWidth="@dimen/md_keylines"
+                        android:layout_height="@dimen/option_height32"
+                        android:id="@+id/checkBoxA"
+                        android:checked="false"
+                        android:tint="@color/green"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/optionB"
+                    android:layout_width="@dimen/option_height32"
+                    android:maxWidth="@dimen/md_keylines"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    android:layout_height="@dimen/option_height32">
+                    <TextView
+                        android:id="@+id/optionTextB"
+                        android:layout_marginLeft="@dimen/md_keylines"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="B"
+                        android:ellipsize="end"
+                        android:singleLine="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/large_text_view" />
+
+                    <CheckBox
+                        android:layout_width="@dimen/option_height32"
+                        android:maxWidth="@dimen/md_keylines"
+                        android:layout_height="@dimen/option_height32"
+                        android:id="@+id/checkBoxB"
+                        android:checked="false"
+                        android:tint="@color/green"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/optionC"
+                    android:layout_width="@dimen/option_height32"
+                    android:maxWidth="@dimen/md_keylines"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    android:layout_height="@dimen/option_height32">
+                    <TextView
+                        android:id="@+id/optionTextC"
+                        android:layout_marginLeft="@dimen/md_keylines"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="C"
+                        android:ellipsize="end"
+                        android:singleLine="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/large_text_view" />
+
+                    <CheckBox
+                        android:layout_width="@dimen/option_height32"
+                        android:maxWidth="@dimen/md_keylines"
+                        android:layout_height="@dimen/option_height32"
+                        android:id="@+id/checkBoxC"
+                        android:checked="false"
+                        android:shadowColor="@color/white"
+                        android:tint="@color/green"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/optionD"
+                    android:layout_width="@dimen/option_height32"
+                    android:maxWidth="@dimen/md_keylines"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    android:layout_height="@dimen/option_height32">
+                    <TextView
+                        android:id="@+id/optionTextD"
+                        android:layout_marginLeft="@dimen/md_keylines"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="D"
+                        android:ellipsize="end"
+                        android:singleLine="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/large_text_view" />
+
+                    <CheckBox
+                        android:layout_width="@dimen/option_height32"
+                        android:maxWidth="@dimen/md_keylines"
+                        android:layout_height="@dimen/option_height32"
+                        android:id="@+id/checkBoxD"
+                        android:checked="false"
+                        android:shadowColor="@color/white"
+                        android:tint="@color/green"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/part3"
+            android:layout_below="@+id/part2"
+            android:background="@drawable/boarder_line_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/part3Linear"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/comments"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="@dimen/md_keylines"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:background="@drawable/layout_click_background"
+                    android:layout_marginLeft="@dimen/md_keylines"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/commentImage"
+                        android:layout_width="@dimen/comments"
+                        android:layout_height="@dimen/comments"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_action_comments"
+                        android:background="@color/line_background" />
+
+                    <TextView
+                        android:id="@+id/comment"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/comment"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/article_subheading" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/editorial"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_click_background"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/editorialImage"
+                        android:layout_width="@dimen/comments"
+                        android:layout_height="@dimen/comments"
+                        android:layout_marginLeft="@dimen/md_keylines"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_action_editorial"
+                        android:background="@color/line_background" />
+
+                    <TextView
+                        android:id="@+id/editorialText"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/editorial"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/article_subheading" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/submission"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:background="@drawable/layout_click_background"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/submissionImage"
+                        android:layout_width="@dimen/comments"
+                        android:layout_height="@dimen/comments"
+                        android:layout_marginLeft="@dimen/md_keylines"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_action_best_submission"
+                        android:background="@color/line_background" />
+
+                    <TextView
+                        android:id="@+id/submissionText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/submission"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/article_subheading" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

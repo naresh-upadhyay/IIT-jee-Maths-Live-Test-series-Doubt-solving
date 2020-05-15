@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PostExample">
+
+    <ScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="10dp">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/manditory"
+                android:text="@string/manditory"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:textColor="@color/light_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tagsTextView"
+                android:text="@string/tags"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/md_keylines"
+                android:textColor="@color/hadlerColorBorder"
+                android:layout_below="@id/manditory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:visibility="gone"
+                android:layout_below="@+id/tagsTextView"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.apradanas.simplelinkabletext.LinkableEditText
+                    android:id="@+id/tagsvalLinkableEdit"
+                    android:hint="@string/selectTags"
+                    android:textColor="@color/black"
+                    android:singleLine="false"
+                    android:imeOptions="actionSend"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scrollbars="vertical"
+                    android:lines="5"
+                    android:minLines="1"
+                    android:maxLines="5"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:cursorVisible="true"
+                    android:textSize="@dimen/medium_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/questionTextView"
+                android:layout_below="@+id/rl1"
+                android:text="@string/questionText"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:textColor="@color/hadlerColorBorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_below="@+id/questionTextView"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.apradanas.simplelinkabletext.LinkableEditText
+                    android:id="@+id/questionvalLinkableEdit"
+                    android:hint="@string/describeEntry"
+                    android:textColor="@color/black"
+                    android:singleLine="false"
+                    android:imeOptions="actionSend"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scrollbars="vertical"
+                    android:lines="5"
+                    android:minLines="1"
+                    android:maxLines="5"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:cursorVisible="true"
+                    android:textSize="@dimen/medium_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/questionTextView1"
+                android:layout_below="@+id/rl2"
+                android:text="@string/markspos"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:textColor="@color/hadlerColorBorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/rl21"
+                android:layout_below="@+id/questionTextView1"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.apradanas.simplelinkabletext.LinkableEditText
+                    android:id="@+id/marksposLinkableEdit"
+                    android:hint="@string/markspos"
+                    android:textColor="@color/black"
+                    android:singleLine="false"
+                    android:imeOptions="actionSend"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scrollbars="vertical"
+                    android:lines="5"
+                    android:minLines="1"
+                    android:maxLines="5"
+                    android:inputType="number"
+                    android:cursorVisible="true"
+                    android:textSize="@dimen/medium_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/questionTextView2"
+                android:layout_below="@+id/rl21"
+                android:text="@string/marksneg"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:textColor="@color/hadlerColorBorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/rl22"
+                android:layout_below="@+id/questionTextView2"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.apradanas.simplelinkabletext.LinkableEditText
+                    android:id="@+id/marksnegLinkableEdit"
+                    android:hint="@string/marksneg"
+                    android:textColor="@color/black"
+                    android:singleLine="false"
+                    android:imeOptions="actionSend"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scrollbars="vertical"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:lines="5"
+                    android:minLines="1"
+                    android:maxLines="5"
+                    android:cursorVisible="true"
+                    android:textSize="@dimen/medium_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/selectQuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl22"
+                android:layout_marginTop="@dimen/right_margin_card"
+                tools:text="@string/selectSpinnerChapter"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:textColor="@color/hadlerColorBorder"
+                android:textSize="@dimen/large_text_view" />
+
+            <RelativeLayout
+                android:id="@+id/partspinnerQuestion"
+                android:layout_below="@id/selectQuest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinnerQuestion"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/rl3"
+                android:layout_below="@+id/partspinnerQuestion"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/questionImageTextView"
+                    android:text="@string/questionImageText"
+                    android:layout_marginTop="@dimen/right_margin_card"
+                    android:textColor="@color/hadlerColorBorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/right_margin_card"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/attachImage_post_Question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/ic_action_new_picture"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/black" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl4"
+                android:layout_below="@+id/rl3"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/optionTextView"
+                    android:text="@string/optionSwitchText"
+                    android:textColor="@color/hadlerColorBorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Switch
+                        android:id="@+id/optionSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textOff=""
+                        android:textOn=""
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl4"
+                android:layout_marginTop="@dimen/right_margin_card"
+                tools:text="@string/selectSpinner"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:textColor="@color/hadlerColorBorder"
+                android:textSize="@dimen/large_text_view" />
+
+            <RelativeLayout
+                android:id="@+id/partspinner"
+                android:layout_below="@id/select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinnerNumbers"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/md_keylines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/options"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/partspinner">
+                <TextView
+                    android:id="@+id/optionsText"
+                    android:text="@string/options"
+                    android:textColor="@color/hadlerColorBorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/part2Linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/optionsText"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:id="@+id/optionA"
+                        android:layout_width="@dimen/cards_button_width"
+                        android:maxWidth="@dimen/md_keylines"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:layout_marginRight="@dimen/md_keylines"
+                        android:layout_height="@dimen/cards_button_height">
+                        <TextView
+                            android:id="@+id/optionTextA"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="@dimen/md_keylines"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="A"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/options_dim32" />
+
+                        <CheckBox
+                            android:layout_width="@dimen/cards_button_width"
+                            android:maxWidth="@dimen/md_keylines"
+                            android:layout_height="@dimen/cards_button_height"
+                            android:id="@+id/checkBoxA"
+                            android:layout_centerInParent="true"
+                            android:checked="true"
+                            android:button="@null"
+                            android:background="?android:attr/listChoiceIndicatorMultiple"
+                            android:shadowColor="@color/white"
+                            android:tint="@color/green"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/optionB"
+                        android:layout_width="@dimen/cards_button_width"
+                        android:maxWidth="@dimen/md_keylines"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:layout_marginRight="@dimen/md_keylines"
+                        android:layout_height="@dimen/cards_button_height">
+                        <TextView
+                            android:id="@+id/optionTextB"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="@dimen/md_keylines"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="B"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/options_dim32" />
+
+                        <CheckBox
+                            android:layout_width="@dimen/cards_button_width"
+                            android:maxWidth="@dimen/md_keylines"
+                            android:layout_height="@dimen/cards_button_height"
+                            android:id="@+id/checkBoxB"
+                            android:layout_centerInParent="true"
+                            android:checked="false"
+                            android:button="@null"
+                            android:background="?android:attr/listChoiceIndicatorMultiple"
+                            android:shadowColor="@color/white"
+                            android:tint="@color/green"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/optionC"
+                        android:layout_width="@dimen/cards_button_width"
+                        android:maxWidth="@dimen/md_keylines"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:layout_marginRight="@dimen/md_keylines"
+                        android:layout_height="@dimen/cards_button_height">
+                        <TextView
+                            android:id="@+id/optionTextC"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="@dimen/md_keylines"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="C"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/options_dim32" />
+
+                        <CheckBox
+                            android:layout_width="@dimen/cards_button_width"
+                            android:maxWidth="@dimen/md_keylines"
+                            android:layout_height="@dimen/cards_button_height"
+                            android:id="@+id/checkBoxC"
+                            android:layout_centerInParent="true"
+                            android:checked="false"
+                            android:button="@null"
+                            android:background="?android:attr/listChoiceIndicatorMultiple"
+                            android:shadowColor="@color/white"
+                            android:tint="@color/green"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/optionD"
+                        android:layout_width="@dimen/cards_button_width"
+                        android:maxWidth="@dimen/md_keylines"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:layout_marginRight="@dimen/md_keylines"
+                        android:layout_height="@dimen/cards_button_height">
+                        <TextView
+                            android:id="@+id/optionTextD"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="@dimen/md_keylines"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="D"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/options_dim32" />
+
+                        <CheckBox
+                            android:layout_width="@dimen/cards_button_width"
+                            android:maxWidth="@dimen/md_keylines"
+                            android:layout_height="@dimen/cards_button_height"
+                            android:id="@+id/checkBoxD"
+                            android:layout_centerInParent="true"
+                            android:checked="false"
+                            android:button="@null"
+                            android:background="?android:attr/listChoiceIndicatorMultiple"
+                            android:shadowColor="@color/white"
+                            android:tint="@color/green"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/answerTextView"
+                android:layout_below="@+id/options"
+                android:text="@string/answerText"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:textColor="@color/hadlerColorBorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/rl6"
+                android:layout_below="@+id/answerTextView"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.apradanas.simplelinkabletext.LinkableEditText
+                    android:id="@+id/answervalLinkableEdit"
+                    android:hint="@string/describeEntry"
+                    android:textColor="@color/black"
+                    android:singleLine="false"
+                    android:imeOptions="actionSend"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scrollbars="vertical"
+                    android:lines="5"
+                    android:minLines="1"
+                    android:maxLines="5"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:cursorVisible="true"
+                    android:textSize="@dimen/medium_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/rl7"
+                android:layout_below="@+id/rl6"
+                android:layout_marginTop="@dimen/right_margin_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/answerImageTextView"
+                    android:text="@string/answerImageText"
+                    android:textColor="@color/hadlerColorBorder"
+                    android:layout_marginTop="@dimen/right_margin_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/right_margin_card"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/attachImage_post_Answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/ic_action_new_picture"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:tint="@color/black" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/postButton_post_example"
+                android:layout_width="@dimen/right_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/md_keylines"
+                android:layout_marginBottom="@dimen/bottom_recycler"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:backgroundTint="@color/line_background"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/rl7"
+                android:textColor="@color/blue"
+                android:textAllCaps="false"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/post"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

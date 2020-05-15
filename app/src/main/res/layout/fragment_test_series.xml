@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/conceptRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/big_padding"
+        android:paddingTop="16dp"
+        android:scrollbars="vertical"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/uploadExample"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="@dimen/bottom_recycler"
+        android:layout_marginLeft="@dimen/right_margin_card"
+        android:backgroundTint="@color/line_background"
+        android:background="@color/redyellow"
+        android:tint="@color/white"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_action_upload" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progress_bar_backdrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorName="LineSpinFadeLoaderIndicator" />
+</RelativeLayout>

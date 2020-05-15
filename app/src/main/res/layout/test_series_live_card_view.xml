@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/startondate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bottom_recycler"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textSize="@dimen/large_text_view"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="@string/startondate"/>
+    <Button
+        android:id="@+id/startnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginTop="@dimen/bottom_recycler"
+        android:layout_below="@id/startondate"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:textSize="@dimen/large_text_view"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="@string/startnow"/>
+    <Button
+        android:id="@+id/instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/blue"
+        android:layout_below="@id/startnow"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/large_text_view"
+        android:textAllCaps="false"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="@string/instruction"/>
+
+</RelativeLayout>

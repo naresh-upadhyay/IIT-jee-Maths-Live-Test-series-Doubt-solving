@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/instruction_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instrucitonfinish"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/options_dim32"
+        android:layout_marginBottom="@dimen/options_dim32"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/instruction_finish2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try to solve the question first, then open it"
+        android:layout_marginTop="@dimen/options_dim32"
+        android:visibility="invisible"
+        android:layout_marginBottom="@dimen/options_dim32"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/part1"
+        android:layout_below="@+id/instruction_finish"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancel_choice"
+            android:layout_width="@dimen/right_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/right_margin_card"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/red"
+            android:textSize="@dimen/large_text_view"
+            android:textAllCaps="false"
+            android:text="@string/cancel"/>
+        <Button
+            android:id="@+id/finish_test"
+            android:layout_width="@dimen/right_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/right_margin_card"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/large_text_view"
+            android:textColor="@color/blue"
+            android:textAllCaps="false"
+            android:text="@string/finish"/>
+
+    </RelativeLayout>
+</RelativeLayout>

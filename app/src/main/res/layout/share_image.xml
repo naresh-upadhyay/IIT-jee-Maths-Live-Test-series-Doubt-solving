@@ -5,34 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
         android:id="@+id/shareImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:isScrollContainer="true"
-        android:src="@mipmap/mathsk"
-        android:layout_marginBottom="50dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_above="@+id/part1"
         tools:maxHeight="@android:dimen/dialog_min_width_minor" />
-    <Button
-        android:id="@+id/shareHere"
+    <RelativeLayout
+        android:id="@+id/part1"
+        android:layout_below="@+id/instruction_finish"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:hint="Send"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:textAllCaps="false"
-        android:textColor="#0f0"
-        android:background="@drawable/send_button_select"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp" />
-    <Button
-        android:id="@+id/cancelHere"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:hint="Cancel"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:textAllCaps="false"
-        android:textColor="#f00"
-        android:background="@drawable/cancel_button_selector"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp" />
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancelHere"
+            android:layout_width="@dimen/right_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/red"
+            android:textSize="@dimen/large_text_view"
+            android:textAllCaps="false"
+            android:text="@string/cancel"/>
+        <Button
+            android:id="@+id/shareHere"
+            android:layout_width="@dimen/right_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/large_text_view"
+            android:textColor="@color/blue"
+            android:textAllCaps="false"
+            android:text="@string/send"/>
+
+    </RelativeLayout>
+
+
 </RelativeLayout>

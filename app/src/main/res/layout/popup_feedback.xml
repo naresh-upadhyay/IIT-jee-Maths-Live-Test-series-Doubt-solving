@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feedback_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+  <TextView
+      android:id="@+id/manditory"
+      android:text="@string/feedback"
+      android:layout_marginTop="@dimen/right_margin_card"
+      android:layout_centerHorizontal="true"
+      android:textSize="25dp"
+      android:textColor="@color/light_red"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  <RadioGroup
+      android:layout_below="@id/manditory"
+      android:layout_marginLeft="@dimen/md_keylines"
+      android:layout_marginTop="@dimen/option_height32"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/rgroupFeedback">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easy"
+        android:textSize="@dimen/large_text_view"
+        android:id="@+id/easy"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/large_text_view"
+        android:text="Medium"
+        android:id="@+id/medium"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/large_text_view"
+        android:text="Hard"
+        android:id="@+id/hard" />
+  </RadioGroup>
+  <RadioGroup
+      android:layout_below="@id/manditory"
+      android:layout_marginLeft="@dimen/md_keylines"
+      android:layout_marginTop="@dimen/option_height32"
+      android:visibility="invisible"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/rgroupRate">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Satisfied"
+        android:textSize="@dimen/large_text_view"
+        android:id="@+id/nsatisfied"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/large_text_view"
+        android:text="Satisfied"
+        android:id="@+id/satisfied"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/large_text_view"
+        android:text="Excellent"
+        android:id="@+id/excellent" />
+  </RadioGroup>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/editText"
+      android:layout_below="@id/rgroupFeedback"
+      android:layout_marginTop="@dimen/right_margin_card"
+      android:layout_marginLeft="@dimen/md_keylines"
+      android:layout_marginRight="@dimen/md_keylines"
+      android:elevation="50dp"
+      app:cardCornerRadius="10dp"
+      android:background="@color/white"
+      android:layout_width="match_parent"
+      android:layout_height="150dp">
+
+    <com.apradanas.simplelinkabletext.LinkableEditText
+        android:id="@+id/tagsvalLinkableEdit"
+        android:hint="@string/thought"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/right_margin_card"
+        android:singleLine="false"
+        android:imeOptions="actionSend"
+        android:clickable="true"
+        android:focusable="true"
+        android:scrollbars="vertical"
+        android:gravity="top"
+        android:minLines="1"
+        android:background="@null"
+        android:inputType="textMultiLine|textCapSentences"
+        android:cursorVisible="true"
+        android:textSize="@dimen/medium_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+  </androidx.cardview.widget.CardView>
+
+
+  <Button
+      android:id="@+id/postButton"
+      android:layout_width="@dimen/right_margin"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/md_keylines"
+      android:layout_marginBottom="@dimen/md_keylines"
+      android:background="?attr/selectableItemBackgroundBorderless"
+      android:backgroundTint="@color/line_background"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/editText"
+      android:textColor="@color/blue"
+      android:textAllCaps="false"
+      android:textSize="@dimen/large_text_view"
+      style="?android:attr/borderlessButtonStyle"
+      android:text="@string/post"/>
+
+
+</RelativeLayout>

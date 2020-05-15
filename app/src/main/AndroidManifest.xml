@@ -12,44 +12,100 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
     <application
-        android:name=".MathsDatabase"
+        android:name=".UiMaterial.MathsDatabase"
         android:allowBackup="true"
-        android:icon="@mipmap/mathsk"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/mathsk"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.ReadInstructions"></activity>
         <activity
-            android:name=".PdfFragment"
-            android:label="@string/title_activity_pdf_fragment"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".activities.NcertChapterWise"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".DownloadedList"
-            android:label="@string/title_activity_downloaded_list"
+            android:name=".activities.PostFeedback"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PostShortNotes"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TestSeriesViewCardDetails"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ReviewTest"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ViewCardTestSeriesDataUpload"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PostUpcomingTest"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PostTestData"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TestResult"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.GaveTest"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Test_Series"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" />
+        <activity
+            android:name=".activities.PostConcept"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ViewCardDoubts"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PostDoubt"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PostExample"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".captue.ImageCroper"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CommentView"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ViewCardDetails"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-6924423095909700~8475665982" />
-
         <activity
-            android:name=".MainActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".CourseDetails"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
-            android:name=".Basic_activity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:parentActivityName=".CourseDetails">
+            android:name=".activities.Concepts"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:label="@string/title_activity_concepts"
+            android:parentActivityName=".UiMaterial.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -65,11 +121,59 @@
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".CourseDetails" />
+                android:value=".UiMaterial.MainActivity" />
         </activity>
         <activity
-            android:name=".SplashActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize">
+            android:name=".Database.DownloadedList"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:label="@string/title_activity_downloaded_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6924423095909700~8475665982" />
+
+        <activity
+            android:name=".UiMaterial.MainActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CourseDetails"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UiMaterial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.Basic_activity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:parentActivityName=".activities.CourseDetails">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos”,,,http://docs.google.com/viewerng -->
+                <!-- todo //a important concept is here -->
+                <data
+                    android:host="docs.google.com"
+                    android:pathPrefix="/viewerng"
+                    android:scheme="http" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.CourseDetails" />
+        </activity>
+        <activity
+            android:name=".UiMaterial.SplashActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -77,27 +181,42 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name=".UiMaterial.LoginActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
             android:label="@string/title_activity_login" />
         <activity
-            android:name=".Favourites"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:parentActivityName=".MainActivity"
+            android:name=".activities.Favourites"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:parentActivityName=".UiMaterial.MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".UiMaterial.MainActivity" />
         </activity>
-        <activity android:name=".LoginOption" />
+        <activity android:name=".UiMaterial.LoginOption" />
         <activity
-            android:name=".Short_note"
+            android:name=".activities.Short_note"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
             android:label="@string/title_activity_short_note"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".Question_bank"
+            android:name=".activities.Question_bank"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
             android:label="@string/title_activity_question_bank"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.naresh.kingupadhyay.mathsking.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>

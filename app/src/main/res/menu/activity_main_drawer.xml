@@ -26,14 +26,19 @@
             android:id="@+id/downloaded"
             android:icon="@drawable/ic_action_download"
             android:title="Offline saved" />
+        <item
+            android:id="@+id/test_series"
+            android:icon="@drawable/ic_action_test_series"
+            android:title="@string/testseries" />
+        <item
+            android:id="@+id/adminInstructions"
+            android:icon="@drawable/feedback"
+            android:title="Instructions (must read)" />
+
     </group>
 
     <item android:title="Application">
         <menu>
-            <item
-                android:id="@+id/update"
-                android:icon="@drawable/update"
-                android:title="Update" />
             <item
                 android:id="@+id/share"
                 android:icon="@drawable/ic_menu_share"
@@ -44,20 +49,23 @@
                 android:title="Settings" /-->
             <item
                 android:id="@+id/r_us"
+                android:iconTint="@color/blue"
                 android:icon="@drawable/rate"
                 android:title="Rate us" />
             <item
-                android:id="@+id/a_us"
-                android:icon="@drawable/about_us"
-                android:title="About us" />
+                android:id="@+id/instagram"
+                android:icon="@drawable/instagram"
+                android:title="Follow us on Instagram" />
             <item
-                android:id="@+id/help"
-                android:icon="@drawable/feedback"
-                android:title="Feedback or Help" />
-            <!--item
-                android:id="@+id/disclaimer"
-                android:icon="@drawable/disclaimer"
-                android:title="Disclaimer" /-->
+                android:id="@+id/facebook"
+                android:icon="@drawable/facebook"
+                android:iconTint="@color/blue"
+                android:title="Follow us on Facebook" />
+            <item
+                android:id="@+id/feedback"
+                android:icon="@drawable/ic_action_edit"
+                android:title="Feedback and Help" />
+
             <item
                 android:id="@+id/logout"
                 android:icon="@drawable/logout"

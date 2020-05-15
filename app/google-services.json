@@ -15,6 +15,54 @@
       },
       "oauth_client": [
         {
+          "client_id": "727386924075-3nm0u5mn7n3n69rvo7ln2ehr6c84vrsd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.naresh.kingupadhyay.mathsking",
+            "certificate_hash": "3a53454709807e6086f731a20dc866948ff1239f"
+          }
+        },
+        {
+          "client_id": "727386924075-opjopuf1u9a2o10kvoumc1ub6t66r7p9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.naresh.kingupadhyay.mathsking",
+            "certificate_hash": "9571506c634d3e49a29d52b5784cbd4847f78ae4"
+          }
+        },
+        {
+          "client_id": "727386924075-doiluhs99acb0gihb7l1g8t1svj480nf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.naresh.kingupadhyay.mathsking",
+            "certificate_hash": "cf2fe74207a5c65cbdcbc92599f6111e49645857"
+          }
+        },
+        {
+          "client_id": "727386924075-4461fsm69a44tqab6h41eqckapq7cska.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.naresh.kingupadhyay.mathsking",
+            "certificate_hash": "2ec3dcef2e5b39d0652415c8d799fdf63b78acac"
+          }
+        },
+        {
+          "client_id": "727386924075-ufkr9e4bain942p6qn8d2tisd2brcpfh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.naresh.kingupadhyay.mathsking",
+            "certificate_hash": "3a293e96cda74ebe0934612546da7b0436f92129"
+          }
+        },
+        {
+          "client_id": "727386924075-tau6f2akeui0tmeuvhgeop7nmk85sqgj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.naresh.kingupadhyay.mathsking",
+            "certificate_hash": "675775d0dcd55c2b416e2ef3eeba59eba20d355f"
+          }
+        },
+        {
           "client_id": "727386924075-t6mtkg5fgs1lgd5q5r591rs5vq1pbbfb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -33,22 +81,16 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
               "client_id": "727386924075-5579iu89ksiv3ot8mb8fp9u75t9ofmh4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
-      }
+      },
+      "admob_app_id": "ca-app-pub-6924423095909700~8475665982"
     }
   ],
   "configuration_version": "1"
